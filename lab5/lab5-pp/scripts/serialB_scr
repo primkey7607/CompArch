@@ -1,0 +1,44 @@
+(time ../serial 2048 16 0) &>../outputs/serB/ser2048_16B
+echo "2048-16 serial done";
+(time ../serial 2048 32 0) &>../outputs/serB/ser2048_32B
+echo "2048-32 serial done";
+(time ../serial 2048 64 0) &>../outputs/serB/ser2048_64B
+echo "2048-64 serial done";
+(time ../serial 2048 128 0) &>../outputs/serB/ser2048_128B
+echo "2048-128 serial done";
+(time ../serial 2048 256 0) &>../outputs/serB/ser2048_256B
+echo "2048-256 serial done";
+(time ../serial 2048 512 0) &>../outputs/serB/ser2048_512B
+echo "2048-512 serial done";
+(time ../serial 2048 1024 0) &>../outputs/serB/ser2048_1024B
+echo "2048-1024 serial done";
+
+(time ../serial 4096 16 0) &>../outputs/serB/ser4096_16B
+echo "4096-16 serial done";
+(time ../serial 4096 32 0) &>../outputs/serB/ser4096_32B
+echo "4096-32 serial done";
+(time ../serial 4096 64 0) &>../outputs/serB/ser4096_64B
+echo "4096-64 serial done";
+(time ../serial 4096 128 0) &>../outputs/serB/ser4096_128B
+echo "4096-128 serial done";
+(time ../serial 4096 256 0) &>../outputs/serB/ser4096_256B
+echo "4096-256 serial done";
+(time ../serial 4096 512 0) &>../outputs/serB/ser4096_512B
+echo "4096-512 serial done";
+(time ../serial 4096 1024 0) &>../outputs/serB/ser4096_1024B
+echo "4096-1024 serial done";
+
+(time ../serial 8192 16 0) &>../outputs/serB/ser8192_16B
+echo "8192-16 serial done";
+(time ../serial 8192 32 0) &>../outputs/serB/ser8192_32B
+echo "8192-32 serial done";
+(time ../serial 8192 64 0) &>../outputs/serB/ser8192_64B
+echo "8192-64 serial done";
+(time ../serial 8192 128 0) &>../outputs/serB/ser8192_128B
+echo "8192-128 serial done";
+(time ../serial 8192 256 0) &>../outputs/serB/ser8192_256B
+echo "8192-256 serial done";
+(time ../serial 8192 512 0) &>../outputs/serB/ser8192_512B
+echo "8192-512 serial done";
+(time ../serial 8192 1024 0) &>../outputs/serB/ser8192_1024B
+echo "8192-1024 serial done";

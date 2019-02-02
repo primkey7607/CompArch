@@ -1,0 +1,6 @@
+#(time ../parallel 32 1 1) &>par32_out;
+#echo "32 parallel done";
+(time ../parallel 10000 1 0) &>../outputs/par10000_time;
+echo "10000 parallel done";
+(time ../parallel 12000 1 0) &>../outputs/par12000_time;
+echo "12000 parallel done";

@@ -1,0 +1,2 @@
+.text
+mov X1, 0x1

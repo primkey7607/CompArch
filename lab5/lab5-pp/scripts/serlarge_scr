@@ -1,0 +1,6 @@
+#(time ../serial 32 1 1) &>ser32_out;
+#echo "32 serial done";
+(time ../serial 10000 1 1) &>../outputs/ser10000_time,;
+echo "10000 serial done";
+(time ../serial 12000 1 1) &>../outputs/ser12000_time;
+echo "12000 serial done";

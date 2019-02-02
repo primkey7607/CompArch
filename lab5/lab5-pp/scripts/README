@@ -1,0 +1,13 @@
+parallel_scr:  Runs parallel on different N sizes without output
+serial_scr:    Runs serial on different N sizes without output
+
+parallelB_scr: For each N, runs parallel on different block sizes to get  best.
+serialB_scr:   For each N, runs parallel on different block sizes to get best.  
+
+parallelout_scr: Parallel with output for each N.
+serialout_scr: Serial with output for each N.
+
+parlarge_scr: N = 10K and 12K
+serlarge_scr: N = 10K and 12K
+
+

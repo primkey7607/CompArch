@@ -1,0 +1,11 @@
+Multi-core:
+mp_test1: 10
+mp_test2: 7
+mp_fibonacci: 10
+
+Cache coherence:
+MESI: 25 
+Report: 10 
+
+
+Total score: 62 

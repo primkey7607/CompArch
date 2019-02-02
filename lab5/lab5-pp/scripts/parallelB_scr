@@ -1,0 +1,44 @@
+(time ../parallel 2048 16 0) &>../outputs/parB/par2048_16B
+echo "2048-16 parallel done";
+(time ../parallel 2048 32 0) &>../outputs/parB/par2048_32B
+echo "2048-32 parallel done";
+(time ../parallel 2048 64 0) &>../outputs/parB/par2048_64B
+echo "2048-64 parallel done";
+(time ../parallel 2048 128 0) &>../outputs/parB/par2048_128B
+echo "2048-128 parallel done";
+(time ../parallel 2048 256 0) &>../outputs/parB/par2048_256B
+echo "2048-256 parallel done";
+(time ../parallel 2048 512 0) &>../outputs/parB/par2048_512B
+echo "2048-512 parallel done";
+(time ../parallel 2048 1024 0) &>../outputs/parB/par2048_1024B
+echo "2048-1024 parallel done";
+
+(time ../parallel 4096 16 0) &>../outputs/parB/par4096_16B
+echo "4096-16 parallel done";
+(time ../parallel 4096 32 0) &>../outputs/parB/par4096_32B
+echo "4096-32 parallel done";
+(time ../parallel 4096 64 0) &>../outputs/parB/par4096_64B
+echo "4096-64 parallel done";
+(time ../parallel 4096 128 0) &>../outputs/parB/par4096_128B
+echo "4096-128 parallel done";
+(time ../parallel 4096 256 0) &>../outputs/parB/par4096_256B
+echo "4096-256 parallel done";
+(time ../parallel 4096 512 0) &>../outputs/parB/par4096_512B
+echo "4096-512 parallel done";
+(time ../parallel 4096 1024 0) &>../outputs/parB/par4096_1024B
+echo "4096-1024 parallel done";
+
+(time ../parallel 8192 16 0) &>../outputs/parB/par8192_16B
+echo "8192-16 parallel done";
+(time ../parallel 8192 32 0) &>../outputs/parB/par8192_32B
+echo "8192-32 parallel done";
+(time ../parallel 8192 64 0) &>../outputs/parB/par8192_64B
+echo "8192-64 parallel done";
+(time ../parallel 8192 128 0) &>../outputs/parB/par8192_128B
+echo "8192-128 parallel done";
+(time ../parallel 8192 256 0) &>../outputs/parB/par8192_256B
+echo "8192-256 parallel done";
+(time ../parallel 8192 512 0) &>../outputs/parB/par8192_512B
+echo "8192-512 parallel done";
+(time ../parallel 8192 1024 0) &>../outputs/parB/par8192_1024B
+echo "8192-1024 parallel done";

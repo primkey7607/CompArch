@@ -1,0 +1,7 @@
+.text
+mov X1, 1024
+lsl X1, X1, 18 
+mov X3, 0x345
+sturb W3, [X1, 0x0]
+ldurb W21, [X1, 0x0]
+HLT 0

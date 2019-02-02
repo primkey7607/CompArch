@@ -1,0 +1,36 @@
+make clean: will remove all executables to get a clean start.
+
+make will produce 4 executables:
+
+1. serial (serial optimized -- SO in the report)
+2. parallel (parallel optimized -- PO in the report)
+3. sernopt (serial non optimized -- SN in the report).
+3. parnopt (parallel non optimized -- PN in the report).
+
+
+To run serial or parallel the command line is
+
+./serial  <matrix dimension> <blocksize> <0 for no output and 1 for output>.
+
+or 
+./parallel  <matrix dimension> <blocksize> <0 for no output and 1 for output>.
+
+For example the commmand 
+
+                       ./parallel  2048 128  1  
+
+will multiply 2048 x 2048 matrices with blocksize = 128 4 posix threads.
+
+alternatively you can use  command
+
+                      (time ./parallel  2048 128  0) &>out
+
+to do the same multiplication without outputs and with time stats.
+
+
+
+Serial version can be run in the same way. 
+
+To run the non-optimized serial or parallel version the same command is used except that block size must be passed as some positive number such as 1. So, 
+./serial  2048 1  1 will run serial and produce output.
+

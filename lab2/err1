@@ -1,0 +1,63 @@
+src/pipe.c: In function 'pipe_stage_wb':
+src/pipe.c:446:14: warning: implicit declaration of function 'wb_STURW' [-Wimplicit-function-declaration]
+              wb_STURW();
+              ^
+src/pipe.c:486:59: error: 'opc_ins' undeclared (first use in this function)
+            printf(" Instruction is not recognized, %d\n", opc_ins);
+                                                           ^
+src/pipe.c:486:59: note: each undeclared identifier is reported only once for each function it appears in
+src/pipe.c: In function 'pipe_stage_mem':
+src/pipe.c:782:39: error: 'Pipe_Reg_EXtoMEM {aka struct Pipe_Reg_EXtoMEM}' has no member named 'ALU_out'
+            DE_EX_REG.fval = EX_MEM_REG.ALU_out;
+                                       ^
+src/pipe.c:789:46: error: 'didStall' undeclared (first use in this function)
+            EX_MEM_REG.instr_name == LDURH && didStall == 0){
+                                              ^
+src/pipe.c:794:39: error: 'Pipe_Reg_EXtoMEM {aka struct Pipe_Reg_EXtoMEM}' has no member named 'ALU_out'
+            DE_EX_REG.fval = EX_MEM_REG.ALU_out;
+                                       ^
+src/pipe.c:917:14: warning: implicit declaration of function 'mem_STURW' [-Wimplicit-function-declaration]
+              mem_STURW();
+              ^
+src/pipe.c:961:59: error: 'opc_ins' undeclared (first use in this function)
+            printf(" Instruction is not recognized, %d\n", opc_ins);
+                                                           ^
+src/pipe.c: At top level:
+src/pipe.c:978:85: error: expected ';', ',' or ')' before 'int'
+ void exec_ALU(int64_t op1, int64_t op2, int64_t shamt, int64_t *result, int *Z_flag int *N_flag, int name) {
+                                                                                     ^
+src/pipe.c: In function 'exec_ADD':
+src/pipe.c:1053:4: warning: implicit declaration of function 'exec_ALU' [-Wimplicit-function-declaration]
+    exec_ALU(op1, op2, DE_EX_REG.shamt, &result, &Z, &N, ADD);
+    ^
+src/pipe.c: In function 'exec_LSL':
+src/pipe.c:1379:58: error: 'Pipe_Reg_DEtoEX {aka struct Pipe_Reg_DEtoEX}' has no member named 'shamt_ins'
+    EX_MEM_REG.ALU_val = forVal(DE_EX_REG.rn) << DE_EX_REG.shamt_ins;
+                                                          ^
+src/pipe.c: In function 'exec_LSR':
+src/pipe.c:1389:58: error: 'Pipe_Reg_DEtoEX {aka struct Pipe_Reg_DEtoEX}' has no member named 'shamt_ins'
+    EX_MEM_REG.ALU_val = forVal(DE_EX_REG.rn) >> DE_EX_REG.shamt_ins;
+                                                          ^
+src/pipe.c: In function 'exec_ORR':
+src/pipe.c:1409:82: error: 'Pipe_Reg_DEtoEX {aka struct Pipe_Reg_DEtoEX}' has no member named 'shamt_ins'
+    EX_MEM_REG.ALU_val = forVal(DE_EX_REG.rm) | (forVal(DE_EX_REG.rn) << DE_EX_REG.shamt_ins);
+                                                                                  ^
+src/pipe.c: In function 'exec_EOR':
+src/pipe.c:1419:82: error: 'Pipe_Reg_DEtoEX {aka struct Pipe_Reg_DEtoEX}' has no member named 'shamt_ins'
+    EX_MEM_REG.ALU_val = forVal(DE_EX_REG.rm) ^ (forVal(DE_EX_REG.rn) << DE_EX_REG.shamt_ins);
+                                                                                  ^
+src/pipe.c: In function 'pipe_stage_execute':
+src/pipe.c:1756:58: error: 'opc_ins' undeclared (first use in this function)
+           printf(" Instruction is not recognized, %d\n", opc_ins);
+                                                          ^
+src/pipe.c:1761:11: warning: implicit declaration of function 'isFlush' [-Wimplicit-function-declaration]
+       if (isFlush(DE_EX_REG.PC_4 - 4)){
+           ^
+src/pipe.c:1764:9: warning: implicit declaration of function 'bp_update' [-Wimplicit-function-declaration]
+         bp_update(DE_EX_REG.PC_4 - 4);    
+         ^
+src/pipe.c: In function 'getinfoFIW':
+src/pipe.c:1891:38: error: 'Pipe_Reg_IFtoDE {aka struct Pipe_Reg_IFtoDE}' has no member named 'instr_name'
+      DE_EX_REG.instr_name = IF_DE_REG.instr_name;
+                                      ^
+make: *** [sim] Error 1
